@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+np.random.seed(0)
+
+# y = 4X + 6 ( w1 = 4, w0 = 6) 노이즈를 만듬
+X = 2 * np.random.rand(100,1)
+print(X)
+y = 6 + 4*X + np.random.randn(100,1)
+
+# X, y Visualize Scatter plots 
+
+plt.scatter(X,y)
